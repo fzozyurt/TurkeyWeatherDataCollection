@@ -2,7 +2,7 @@ name: Veri Cekme Guncelleme
 
 on:
   schedule:
-    - cron: "00 00 * * *" # Hergün saat 00:00 da
+    - cron: '00 00,06,12,18 * * *'
   workflow_dispatch:
 
 jobs:
