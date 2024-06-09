@@ -24,7 +24,7 @@ for il in iller_df["il"]:
     ilceler = pd.concat([ilceler,pd.DataFrame(response.json())])
 ilceler.to_csv("data/Ilce_List.csv",sep=';',index=False,encoding="utf-8")
 
-havadurum = pd.read_csv("data/Hava_Durum.csv", sep=";")
+havadurum = pd.read_csv("data/Hava_Durumu.csv", sep=";")
 
 for mid in ilceler["merkezId"]:
     havadurum_url = f"https://servis.mgm.gov.tr/web/tahminler/gunluk?istno={mid}"
