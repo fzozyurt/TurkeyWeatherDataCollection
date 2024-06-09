@@ -1,4 +1,4 @@
-name: Veri Cekme Guncelleme
+name: Kaggle Manuel Upload
 
 on:
   workflow_dispatch:
