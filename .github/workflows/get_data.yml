@@ -59,6 +59,7 @@ jobs:
         run: |
           cd data
           kaggle datasets metadata ${{ vars.KAGGLE_DATASET_PATH}}
+          cd..
           python Scripts/dataset_upload.py
         env:
           KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
